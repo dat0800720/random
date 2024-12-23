@@ -1,5 +1,16 @@
 @import 'normalize.css';
 
+.App {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+@media only screen and (min-width: 600px) {
+  .App {
+    width: 430px;
+  }
+}
+
 :root {
   --primary: #fe2c55;
   --black: #000;
@@ -11,6 +22,164 @@
   --default-layout-header-height: 60px;
   --default-layout-width: 1150px;
   --default-layout-horizontal-spacer: 24px;
+
+  // Colors
+  --rd: 0px;
+  --shd: none;
+  --bg: var(--color_11);
+  --borderwidth: 0px;
+  --bordercolor: var(--color_11);
+  --alpha-bordercolor: 1;
+  --rdOpen: 0px;
+  --shdOpen: none;
+  --bgOpen: var(--color_21);
+  --alpha-bgOpen: 1;
+  --borderwidthOpen: 0px;
+  --bordercolorOpen: var(--color_11);
+  --alpha-bordercolorOpen: 1;
+  --lineColor: var(--color_18);
+  --alpha-lineColor: 1;
+  --lineColorOpen: var(--color_15);
+  --alpha-lineColorOpen: 1;
+  --alpha-bg: 0;
+  --boxShadowToggleOn-shd: none;
+  --boxShadowToggleOn-shdOpen: none;
+
+  --color_0: 255, 255, 255;
+    --color_1: 255, 255, 255;
+    --color_2: 0, 0, 0;
+    --color_3: 237, 28, 36;
+    --color_4: 0, 136, 203;
+    --color_5: 255, 203, 5;
+    --color_6: 114, 114, 114;
+    --color_7: 176, 176, 176;
+    --color_8: 255, 255, 255;
+    --color_9: 114, 114, 114;
+    --color_10: 176, 176, 176;
+    --color_11: 255, 255, 255;
+    --color_12: 237, 237, 238;
+    --color_13: 142, 142, 143;
+    --color_14: 95, 95, 95;
+    --color_15: 47, 47, 48;
+    --color_16: 255, 203, 199;
+    --color_17: 245, 161, 154;
+    --color_18: 224, 45, 31;
+    --color_19: 173, 46, 36;
+    --color_20: 99, 18, 11;
+    --color_21: 238, 255, 247;
+    --color_22: 198, 247, 224;
+    --color_23: 167, 232, 201;
+    --color_24: 113, 199, 159;
+    --color_25: 71, 143, 109;
+    --color_26: 255, 243, 247;
+    --color_27: 245, 215, 225;
+    --color_28: 237, 168, 191;
+    --color_29: 191, 122, 145;
+    --color_30: 163, 86, 112;
+    --color_31: 255, 241, 227;
+    --color_32: 235, 213, 192;
+    --color_33: 219, 190, 162;
+    --color_34: 189, 159, 132;
+    --color_35: 161, 132, 106;
+    --color_36: 255, 255, 255;
+    --color_37: 47, 47, 48;
+    --color_38: 237, 237, 238;
+    --color_39: 142, 142, 143;
+    --color_40: 95, 95, 95;
+    --color_41: 224, 45, 31;
+    --color_42: 173, 46, 36;
+    --color_43: 255, 243, 247;
+    --color_44: 238, 255, 247;
+    --color_45: 47, 47, 48;
+    --color_46: 47, 47, 48;
+    --color_47: 95, 95, 95;
+    --color_48: 224, 45, 31;
+    --color_49: 224, 45, 31;
+    --color_50: 255, 255, 255;
+    --color_51: 255, 255, 255;
+    --color_52: 224, 45, 31;
+    --color_53: 224, 45, 31;
+    --color_54: 142, 142, 143;
+    --color_55: 142, 142, 143;
+    --color_56: 255, 255, 255;
+    --color_57: 255, 255, 255;
+    --color_58: 224, 45, 31;
+    --color_59: 224, 45, 31;
+    --color_60: 224, 45, 31;
+    --color_61: 224, 45, 31;
+    --color_62: 255, 255, 255;
+    --color_63: 255, 255, 255;
+    --color_64: 142, 142, 143;
+    --color_65: 142, 142, 143;
+    --font_0: normal normal normal 50px / 1.4em lobster, cursive;
+    --font_1: normal normal normal 16px / 1.4em din-next-w01-light, sans-serif;
+    --font_2: normal normal bold 28px / 1.4em lobster, cursive;
+    --font_3: normal normal normal 72px / 1.4em lobster, cursive;
+    --font_4: normal normal normal 33px / 1.4em avenir-lt-w01_85-heavy1475544, sans-serif;
+    --font_5: normal normal bold 28px / 1.4em lobster, cursive;
+    --font_6: normal normal normal 21px / 1.4em avenir-lt-w01_35-light1475496, sans-serif;
+    --font_7: normal normal normal 17px / 1.4em avenir-lt-w01_85-heavy1475544, sans-serif;
+    --font_8: normal normal bold 15px / 1.4em avenir-lt-w01_35-light1475496, sans-serif;
+    --font_9: normal normal normal 14px / 1.4em avenir-lt-w01_35-light1475496, sans-serif;
+    --font_10: normal normal normal 12px / 1.4em din-next-w01-light, sans-serif;
+    --wix-ads-height: 0px;
+    --sticky-offset: 0px;
+    --wix-ads-top-height: 0px;
+    --site-width: 320px;
+    --above-all-z-index: 100000;
+    --portals-z-index: 100001;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --minViewportSize: 320;
+    --maxViewportSize: 1920;
+    --theme-spx-ratio: 1px;
+    --scaling-factor: min((100* var(--one-unit)), var(--section-max-width));
+    --customScaleViewportLimit: clamp(var(--minViewportSize)* 1px, 100* var(--one-unit), min(var(--section-max-width), var(--maxViewportSize)* 1px));
+    --wst-button-color-fill-primary: rgb(var(--color_48));
+    --wst-button-color-border-primary: rgb(var(--color_49));
+    --wst-button-color-text-primary: rgb(var(--color_50));
+    --wst-button-color-fill-primary-hover: rgb(var(--color_51));
+    --wst-button-color-border-primary-hover: rgb(var(--color_52));
+    --wst-button-color-text-primary-hover: rgb(var(--color_53));
+    --wst-button-color-fill-primary-disabled: rgb(var(--color_54));
+    --wst-button-color-border-primary-disabled: rgb(var(--color_55));
+    --wst-button-color-text-primary-disabled: rgb(var(--color_56));
+    --wst-button-color-fill-secondary: rgb(var(--color_57));
+    --wst-button-color-border-secondary: rgb(var(--color_58));
+    --wst-button-color-text-secondary: rgb(var(--color_59));
+    --wst-button-color-fill-secondary-hover: rgb(var(--color_60));
+    --wst-button-color-border-secondary-hover: rgb(var(--color_61));
+    --wst-button-color-text-secondary-hover: rgb(var(--color_62));
+    --wst-button-color-fill-secondary-disabled: rgb(var(--color_63));
+    --wst-button-color-border-secondary-disabled: rgb(var(--color_64));
+    --wst-button-color-text-secondary-disabled: rgb(var(--color_65));
+    --wst-color-fill-base-1: rgb(var(--color_36));
+    --wst-color-fill-base-2: rgb(var(--color_37));
+    --wst-color-fill-base-shade-1: rgb(var(--color_38));
+    --wst-color-fill-base-shade-2: rgb(var(--color_39));
+    --wst-color-fill-base-shade-3: rgb(var(--color_40));
+    --wst-color-fill-accent-1: rgb(var(--color_41));
+    --wst-color-fill-accent-2: rgb(var(--color_42));
+    --wst-color-fill-accent-3: rgb(var(--color_43));
+    --wst-color-fill-accent-4: rgb(var(--color_44));
+    --wst-color-fill-background-primary: rgb(var(--color_11));
+    --wst-color-fill-background-secondary: rgb(var(--color_12));
+    --wst-color-text-primary: rgb(var(--color_15));
+    --wst-color-text-secondary: rgb(var(--color_14));
+    --wst-color-action: rgb(var(--color_18));
+    --wst-color-disabled: rgb(var(--color_39));
+    --wst-color-title: rgb(var(--color_45));
+    --wst-color-subtitle: rgb(var(--color_46));
+    --wst-color-line: rgb(var(--color_47));
+    --wst-font-style-h2: var(--font_2);
+    --wst-font-style-h3: var(--font_3);
+    --wst-font-style-h4: var(--font_4);
+    --wst-font-style-h5: var(--font_5);
+    --wst-font-style-h6: var(--font_6);
+    --wst-font-style-body-large: var(--font_7);
+    --wst-font-style-body-medium: var(--font_8);
+    --wst-font-style-body-small: var(--font_9);
+    --wst-font-style-body-x-small: var(--font_10);
 }
 
 * {
@@ -35,22 +204,12 @@ html *::-webkit-scrollbar {
   border-radius: 0;
   width: 8px;
 }
-html *::-webkit-scrollbar {
-  border-radius: 0;
-  width: 8px;
-}
+
 html *::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.15);
 }
-html *::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.15);
-}
-html *::-webkit-scrollbar-track {
-  border-radius: 0;
-  background-color: rgba(0, 0, 0, 0);
-}
+
 html *::-webkit-scrollbar-track {
   border-radius: 0;
   background-color: rgba(0, 0, 0, 0);
