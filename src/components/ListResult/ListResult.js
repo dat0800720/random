@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react';
 import { List, Skeleton } from 'antd';
 import styles from './ListResult.module.scss'
 import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
-const count = 3;
 function ListResult({ children = [], setLabel, data, setRandom }) {
   const handleRemoveRandom = (item) => {
     setLabel(children.filter(i => (i !== item)))

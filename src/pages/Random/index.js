@@ -38,7 +38,6 @@ function Random() {
     const rotation = 360 * 11 - randomDegree;
 
     // Áp dụng CSS xoay
-   
     wheelElement.style.transition = "transform 5s ease-out";
     wheelElement.style.transform = `rotate(${rotation}deg)`;
 

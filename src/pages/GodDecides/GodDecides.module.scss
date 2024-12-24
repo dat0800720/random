@@ -1,0 +1,82 @@
+.wp {
+  margin-top: 60px;
+}
+
+.title {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.6rem;
+  justify-content: center;
+}
+
+.layout-slide {
+  margin: auto;
+  width: 250px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 
+  5px 10px 20px rgba(0, 0, 0, 0.3),
+  -5px -5px 15px rgba(255, 255, 255, 0.8),
+  inset 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.slide{
+  width: 100%;
+  height: inherit;
+}
+
+.slide .list{
+  display: flex;
+  height: inherit;
+  min-width: calc(250px * var(--count));
+  position: relative;
+}
+
+.slide .list .item{
+  background: #FDFDF5;
+  text-align: center;
+  align-items: center;
+  width: 265px;
+  height: 300px;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2),
+              0px 5px 10px rgba(0, 0, 0, 0.1),
+              inset 0px 2px 5px rgba(255, 255, 255, 0.6);
+  left: 100%;
+  animation:  autoRun 11s linear infinite;
+  animation-delay: calc((11s/var(--count)) * (var(--position) - 11));
+}
+
+.slide .list .item .layout-item {
+  position: absolute;
+  left: 7%;
+  top: 7%;
+  width: 86%;
+  height: 86%;
+  padding: 70px 20px;
+  border: 2px solid #4A4A4A;
+}
+
+.slide .list .item .text-vn{
+  color: #333333;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "Roboto, Arial";
+  font-weight: 700;
+}
+
+.slide .list .item .text-en{
+  color: #333333;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+@keyframes autoRun {
+  from { left: 100%; }
+  to { left: calc(250px * -1); }
+}
