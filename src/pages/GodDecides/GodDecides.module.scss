@@ -6,7 +6,11 @@
   text-align: center;
   padding: 50px;
   font-size: 1.6rem;
-  justify-content: center;
+}
+
+.title p {
+  font-style: italic;
+  font-family: "Roboto, Arial";
 }
 
 .layout-slide {
@@ -25,13 +29,13 @@
 }
 
 .slide{
+  background: #000;
   width: 100%;
   height: inherit;
 }
 
 .slide .list{
   display: flex;
-  height: inherit;
   min-width: calc(250px * var(--count));
   position: relative;
 }
@@ -40,7 +44,7 @@
   background: #FDFDF5;
   text-align: center;
   align-items: center;
-  width: 265px;
+  width: 260px;
   height: 300px;
   position: absolute;
   border-radius: 5px;
@@ -48,8 +52,10 @@
               0px 5px 10px rgba(0, 0, 0, 0.1),
               inset 0px 2px 5px rgba(255, 255, 255, 0.6);
   left: 100%;
-  animation:  autoRun 11s linear infinite;
-  animation-delay: calc((11s/var(--count)) * (var(--position) - 11));
+  animation:  autoRun 4s linear infinite;
+  animation-delay: calc((4s/var(--count)) * calc((var(--position) - 4)));
+  animation-play-state: paused;
+  z-index: 5;
 }
 
 .slide .list .item .layout-item {
@@ -74,9 +80,74 @@
   color: #333333;
   width: 100%;
   font-size: 1.6rem;
+  font-family: "Roboto, Arial";
 }
 
 @keyframes autoRun {
-  from { left: 100%; }
-  to { left: calc(250px * -1); }
+  0% { left: 100% }
+  50% { left: 0; animation: ease-out}
+  100% { left: calc(250px * -1); z-index: -1}
+}
+
+.layout-start {
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.start-game{
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  background-color: rgba(22, 24, 35, 0.06);
+  border-radius: 20px;
+  border: 1.5px solid transparent;
+}
+
+.name-book{
+  height: 100%;
+  color: #fff;
+  padding: 25px;
+  position: relative;
+}
+
+.text-name-line-one{
+  display: flex;
+}
+
+.text-name-book{
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+.text-name-book-two{
+  padding-left: 7px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  align-self: flex-end;
+  padding-bottom: 5px;
+}
+
+.text-name-book-three{
+  font-size: 3.4rem;
+  font-weight: 900;
+}
+
+.note {
+  font-size: 1.4rem;
+}
+
+.more {
+  position: absolute;
+  bottom: 25px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.author {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
