@@ -12,8 +12,8 @@ const cx = classNames.bind(styles);
 
 function Random() {
   const [nameRandom, setNameRandom] = useState('')
-  const [listRandom, setListRandom] = useState([1, 1]);
-  const [listLabel, setListLabel] = useState(["dam", "dat"])
+  const [listRandom, setListRandom] = useState([1, 1, 1]);
+  const [listLabel, setListLabel] = useState(["Đàm", "Đức", "Đạt"])
   const [finalValue, setFinalValue] = useState("");
   const [isSpinning, setIsSpinning] = useState(false);
   const [listRotation, setListRotation] = useState([{minDegree: 1, maxDegree: 180, value: 'dam'}, {minDegree: 181, maxDegree: 360, value: 'dat'}]);
@@ -38,7 +38,6 @@ function Random() {
     const rotation = 360 * 11 - randomDegree;
 
     // Áp dụng CSS xoay
-   
     wheelElement.style.transition = "transform 5s ease-out";
     wheelElement.style.transform = `rotate(${rotation}deg)`;
 
