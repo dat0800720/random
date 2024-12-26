@@ -1,11 +1,9 @@
 import { FaHome } from "react-icons/fa";
 import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
-import { DiDrupal } from "react-icons/di";
 import { MdFoodBank } from "react-icons/md";
 import { BiSolidFoodMenu } from "react-icons/bi";
-
-
-
+import { GiCardRandom } from "react-icons/gi";
+import { GiSadCrab } from "react-icons/gi";
 
 export const SidebarData = [
   {
@@ -22,7 +20,7 @@ export const SidebarData = [
   },{
     title: 'Vị Thần Quyết Định',
     path: '/god_decides',
-    icon: <DiDrupal />,
+    icon: <GiCardRandom />,
     cName: 'nav-text'
   },{
     title: 'Hôm Nay Ăn Gì',
@@ -33,6 +31,12 @@ export const SidebarData = [
     title: 'Food Tour Quanh Ta',
     path: '/food_tour_plan',
     icon: <BiSolidFoodMenu />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Cua cá',
+    path: '/fish_crab',
+    icon: <GiSadCrab />,
     cName: 'nav-text'
   },
 ]

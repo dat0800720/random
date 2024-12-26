@@ -18,7 +18,7 @@ function Header() {
   return (
     <Fragment>
       <div className={cx('navbar')}>
-        <div className={cx('title-website')}>XOXO STUDIO</div>
+        <div className={cx('title-website')}>XOXO DAM</div>
         <Link to='#' className={cx('menu-bars')}>
           <FaBars onClick={showSidebar}/>
         </Link>
