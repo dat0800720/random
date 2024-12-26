@@ -60,7 +60,7 @@ function GodDecides() {
     } else {
       elementRefs.current[8].style.cssText = 'left: -7px!important; z-index: 5';
     }
-    setStart(!start);    
+    setStart(false);    
   }
 
   const shuffleArray = (array) => {
