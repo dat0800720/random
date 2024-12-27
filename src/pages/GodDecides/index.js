@@ -7,13 +7,14 @@ const cx = classNames.bind(styles);
 
 function GodDecides() {
   const [start, setStart] = useState(true);
+  const [reset, setReset] = useState(false);
   const [data, setData] = useState(GodDecideData);
   
   const elementRefs = useRef([]);
 
   useEffect(() => {
     setData(shuffleArray(GodDecideData))
-  },[start]);
+  }, [reset]);
 
   // const handleRandomGod = async () => {
   //   setStart(!start);
@@ -56,11 +57,12 @@ function GodDecides() {
         elementRefs.current.map((item, index)=>{
           item.style.animationPlayState = "paused";
         });
-      }, 4000);
+      }, 4050);
     } else {
       elementRefs.current[8].style.cssText = 'left: -7px!important; z-index: 5';
     }
-    setStart(false);    
+    setStart(false);
+    setReset(!reset)
   }
 
   const shuffleArray = (array) => {
