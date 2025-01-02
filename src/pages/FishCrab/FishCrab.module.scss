@@ -2,31 +2,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 110vh;
   background: red;
   top: 0;
 }
 
 .dice-1{
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   transform-style: preserve-3d;
   transition: 1s ease;
 }
 
 .dice-2{
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   transform-style: preserve-3d;
   transition: 1s ease;
 }
 
 .dice-3{
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   transform-style: preserve-3d;
   transition: 1s ease;
 }
@@ -45,7 +45,7 @@
   width: 100%;
   height: 100%;
   border: 4px solid #ddd;
-  border-radius: 5px;
+  border-radius: 7px;
   background: linear-gradient(145deg, #dddbd8, #fff);
   transform-style: preserve-3d;
   overflow: hidden;
@@ -61,27 +61,27 @@
 }
 
 .front{
-  transform:  translateZ(40px);
+  transform:  translateZ(35px);
 }
 
 .back{
-  transform: rotateX(180deg) translateZ(40px);
+  transform: rotateX(180deg) translateZ(35px);
 }
 
 .top{
-  transform: rotateX(90deg) translateZ(40px);
+  transform: rotateX(90deg) translateZ(35px);
 }
 
 .bottom{
-  transform: rotateX(-90deg) translateZ(40px);
+  transform: rotateX(-90deg) translateZ(35px);
 }
 
 .right{
-  transform: rotateY(90deg) translateZ(40px);
+  transform: rotateY(90deg) translateZ(35px);
 }
 
 .left{
-  transform: rotateY(-90deg) translateZ(40px);
+  transform: rotateY(-90deg) translateZ(35px);
 }
 
 .start-game{
@@ -99,8 +99,8 @@
 
 .container {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   margin: auto;
   background: radial-gradient(circle, #ffffff, #e0e0e0);
   border: 2px solid #ccc;
@@ -132,13 +132,14 @@
 }
 
 .avatar{
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
 }
 
 .show-bowl{
-  margin: 10px ;
-  text-align: right;
+  display: flex;
+  margin:  10px 10px 0 25px;
+  margin: right;
 }
 
 @keyframes next {
@@ -155,6 +156,7 @@
   font-family: "Roboto, Arial";
   font-weight: 500;
   color: #000;
+  margin-left: 10px;
 }
 
 .circle{
@@ -170,6 +172,7 @@
 
 .body {
   text-align: center;
+  margin-top: 25px;
 }
 
 
@@ -187,8 +190,8 @@
 
 .bowl-border {
   margin: auto;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   border: 5px solid #888;
   position: absolute;
@@ -202,5 +205,5 @@
 }
 
 .img-main{
-  width: 86%;
+  width: 80%;
 }

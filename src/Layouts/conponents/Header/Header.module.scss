@@ -5,10 +5,15 @@
   align-items: center;
   padding: 0px 20px;
   width: 100%;
-  border-radius: 4px;
   position: fixed;
   top: 0;
   z-index: 999;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    width: 430px;
+  }
 }
 
 .menu-bars{
